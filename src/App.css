@@ -374,9 +374,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .experience p{
   color: #918e8e;
 }
+.tile-card {
+  background: #f4f6f8;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 5px;
+}
+
+.company-logo {
+  max-width: 90px;
+  height: auto;
+  border-radius: 8px;
+  display: inline-block;
+}
+
 
 .experience {
-  padding: 20px;
+  padding: 10px;
 }
 
 h2 {
@@ -471,7 +484,7 @@ h2 {
   }
   
   .experience {
-    padding: 20px;
+    padding: 10px;
   }
   
   h2 {
@@ -632,6 +645,12 @@ h2 {
   width: 100%;
   align:right;
 }
+.education .edu-card {
+  background: #f4f6f8;         /* slightly darker than Bootstrap bg-light */
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 0.20rem;            /* ensures rounded corners look good */
+}
+
 .education h5{
   color:#050c8e;
   padding: 20px;
@@ -706,6 +725,13 @@ h2 {
   
   align: center;
 }
+/* shared tile style */
+.tile-card {
+  background: #f4f6f8;           /* light grey tile */
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 2rem 5rem 2rem 5rem;               /* keeps rounded corners clean */
+}
+
 
 .project h2{
   text-align: center;
@@ -992,3 +1018,9 @@ h2 {
   }
   
 }
+
+
+.top-gap { padding-top: 80px; }        /* change 80px to taste */
+#skills, #certifications { scroll-margin-top: 90px; } /* if you have a fixed navbar */
+
+

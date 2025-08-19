@@ -36,7 +36,7 @@ import keras from "../assets/img/keras.png";
 
 export const Skills = () => {
   return (
-    <section className="skill" id="skills">
+    <section className="skill top-gap" id="skills">
       <div><h2>TECHNICAL SKILLS</h2></div>
 
       {/* Programming Languages */}
