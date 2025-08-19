@@ -8,7 +8,7 @@ import Databricks from "../assets/img/DatabricksCertificate.jpg";
 
 export const Certifications = () => {
     return (
-        <section className="certificate" id="certifications">
+        <section className="certificate top-gap" id="certifications">
             <br />
             <Container>
                 <div><h2>CERTIFICATIONS / AWARDS</h2></div>
