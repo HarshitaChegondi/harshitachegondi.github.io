@@ -6,11 +6,11 @@ import Coursera from "../assets/img/coursera.jpg";
 import APPLAUSE from "../assets/img/applause.jpg";
 
 const certs = [
-  { img: salesforceJS1, title: "Salesforce JavaScript Developer I", year: "2022" },
-  { img: Assiociate,    title: "Salesforce Certified AI Associate",   year: "2023" },
-  { img: Databricks,   title: "Databricks Generative AI Fundamentals", year: "2024" },
-  { img: Coursera,     title: "Deep Learning Specialization",         year: "2023" },
-  { img: APPLAUSE,     title: "Applause Award — ABSYZ",               year: "2022" }
+  { img: Assiociate,    title: "Salesforce Certified AI Associate",   year: "2025" },
+  { img: Databricks,   title: "Databricks Generative AI Fundamentals", year: "2025" },
+  { img: salesforceJS1, title: "Salesforce JavaScript Developer I", year: "2021" },
+  { img: APPLAUSE,     title: "Applause Award — ABSYZ",               year: "2021" },
+  { img: Coursera,     title: "Deep Learning Specialization",         year: "2020" }
 ];
 
 export const Certifications = () => {
