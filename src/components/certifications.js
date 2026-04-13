@@ -17,10 +17,10 @@ export const Certifications = () => {
   return (
     <section className="certs-section" id="certifications">
       <Container fluid className="px-4 px-md-5">
-        <h2 className="section-heading">Certifications</h2>
+        <h2 className="section-ing">Certifications</h2>
         <Row className="g-3 justify-content-center flex-nowrap flex-wrap">
           {certs.map((cert) => (
-            <Col xs={6} sm={4} md={3} lg="auto" key={cert.title} style={{ minWidth: 150, maxWidth: 180 }}>
+            <Col xs={6} sm={4} md={3} lg="auto" key={cert.title} style={{ minWidth: 150, maxWidth: 250 }}>
               <div className="cert-card">
                 <div className="cert-image-area">
                   <img src={cert.img} alt={cert.title} className="cert-img" />
@@ -36,53 +36,4 @@ export const Certifications = () => {
       </Container>
     </section>
   );
-
-import Coursera from "../assets/img/coursera.jpg";
-import Assiociate from "../assets/img/aiassiociate.jpg";
-import APPLAUSE from "../assets/img/applause.jpg";
-import Databricks from "../assets/img/DatabricksCertificate.jpg";
-
-
-export const Certifications = () => {
-    return (
-        <section className="certificate top-gap" id="certifications">
-            <br />
-            <Container>
-                <div><h2>CERTIFICATIONS / AWARDS</h2></div>
-                <br />
-                <Row className="g-4">
-                    <Col xs={12} sm={6} md={4} lg={3}>
-                        <div className="tile">
-                            <img src={salesforceJS1} alt="Salesforce JS1" className="tile-image" />
-                            <h3 className="tile-title">Salesforce JavaScript Developer 1</h3>
-                        </div>
-                    </Col>
-                    <Col xs={12} sm={6} md={4} lg={3}>
-                        <div className="tile">
-                            <img src={Assiociate} alt="AI Assiociate" className="tile-image" />
-                            <h3 className="tile-title">Salesforce Certified AI Assiociate</h3>
-                        </div>
-                    </Col>
-                    <Col xs={12} sm={6} md={4} lg={3}>
-                        <div className="tile">
-                            <img src={Databricks} alt="Databricks" className="tile-image" />
-                            <h3 className="tile-title">Databricks Generative AI fundamentals</h3>
-                        </div>
-                    </Col>
-                    <Col xs={12} sm={6} md={4} lg={3}>
-                        <div className="tile">
-                            <img src={Coursera} alt="Coursera" className="tile-image" />
-                            <h3 className="tile-title">DeepLearning by Coursera</h3>
-                        </div>
-                    </Col>
-                    <Col xs={12} sm={6} md={4} lg={3}>
-                        <div className="tile">
-                            <img src={APPLAUSE} alt="Applause Award" className="tile-image" />
-                            <h3 className="tile-title">Applause Award by ABSYZ</h3>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    );
 };

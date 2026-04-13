@@ -83,6 +83,549 @@ p.success {
 p.danger {
 	color: red;
 }
+
+/************ Shared Section Heading ************/
+.section-ing {
+  text-align: center;
+  color: #0b0568;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/************ Banner – new classes ************/
+.banner .bannerH1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+  color: #0b0568;
+}
+
+.banner .banner-desc {
+  color: #555;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 1.6em;
+  width: 96%;
+  margin-top: 16px;
+}
+
+/************ Stats Bar ************/
+.stats-bar {
+  background: #f4f6fb;
+  padding: 28px 0;
+  border-top: 1px solid #e0e4f0;
+  border-bottom: 1px solid #e0e4f0;
+}
+
+.stats-item {
+  text-align: center;
+  padding: 10px 0;
+  border-right: 1px solid #dde2f0;
+}
+
+.stats-item:last-child {
+  border-right: none;
+}
+
+.stats-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b0568;
+  line-height: 1;
+}
+
+.stats-label {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+/************ Experience – Timeline ************/
+.experience-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.tl-wrapper {
+  position: relative;
+}
+
+.tl-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dde2f0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.tl-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.tl-left,
+.tl-right {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.tl-left {
+  text-align: right;
+}
+
+.tl-right {
+  text-align: left;
+}
+
+.tl-center {
+  width: 40px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.tl-dot {
+  width: 16px;
+  height: 16px;
+  background: #0b0568;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #0b0568;
+}
+
+.timeline-card {
+  background: #f8f9ff;
+  border: 1px solid #e0e4f4;
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-align: left;
+  box-shadow: 0 2px 12px rgba(11, 5, 104, 0.06);
+}
+
+.timeline-card-accent {
+  background: #eef0fc;
+  border-color: #c5caee;
+}
+
+.timeline-card-er {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.timeline-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.timeline-logo-text {
+  width: 48px;
+  height: 48px;
+  background: #0b0568;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0b0568;
+  margin-bottom: 2px;
+}
+
+.timeline-company {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.timeline-date {
+  font-size: 0.78rem;
+  color: #999;
+}
+
+.timeline-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.timeline-list li {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .tl-wrapper::before { left: 16px; transform: none; }
+  .tl-row { flex-direction: column; }
+  .tl-left, .tl-right { text-align: left; padding: 0; }
+  .tl-center { width: 32px; padding-top: 0; margin-bottom: 10px; }
+  .tl-left:empty, .tl-right:empty { display: none; }
+}
+
+/************ Skills – chip grid ************/
+.skills-section {
+  padding: 80px 0;
+  background: #f9faff;
+}
+
+.skills-grid-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-column {
+  background: #fff;
+  border: 1px solid #e2e6f8;
+  border-radius: 12px;
+  padding: 20px 24px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  max-width: 320px;
+  box-shadow: 0 2px 10px rgba(11, 5, 104, 0.05);
+}
+
+.skill-column-ing {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0b0568;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+}
+
+.skill-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-chip {
+  background: #eef0fc;
+  color: #0b0568;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/************ Education – new cards ************/
+.education-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.edu-card-new {
+  background: #f8f9ff;
+  border: 1px solid #e0e4f4;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(11, 5, 104, 0.06);
+}
+
+.edu-card-er {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.edu-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0b0568;
+  margin-bottom: 2px;
+}
+
+.edu-meta {
+  font-size: 0.82rem;
+  color: #777;
+}
+
+.edu-field {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #5c61c9;
+  margin-bottom: 10px;
+}
+
+.edu-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.edu-list li {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/************ Projects – new cards ************/
+.projects-section {
+  padding: 80px 0;
+  background: #f9faff;
+}
+
+.project-card-new {
+  background: #fff;
+  border: 1px solid #e0e4f4;
+  border-radius: 12px;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(11, 5, 104, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card-new:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(11, 5, 104, 0.12);
+}
+
+.project-card-body {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0b0568;
+  margin-bottom: 8px;
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 14px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.project-tag {
+  background: #eef0fc;
+  color: #0b0568;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.73rem;
+  font-weight: 600;
+}
+
+.view-project-btn {
+  display: inline-block;
+  background: #0b0568;
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.2s ease;
+  align-self: flex-start;
+}
+
+.view-project-btn:hover {
+  background: #5c61c9;
+}
+
+/************ Certifications – new cards ************/
+.certs-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.cert-card {
+  background: #f8f9ff;
+  border: 1px solid #e0e4f4;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 2px 10px rgba(11, 5, 104, 0.06);
+  transition: transform 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+}
+
+.cert-image-area {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #eee;
+}
+
+.cert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cert-body {
+  padding: 12px 10px;
+}
+
+.cert-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0b0568;
+  margin-bottom: 4px;
+}
+
+.cert-year {
+  font-size: 0.72rem;
+  color: #999;
+}
+
+/************ Footer – new styles ************/
+.footer-new {
+  background: #0b0568;
+  padding: 60px 0 0 0;
+  color: #fff;
+}
+
+.footer-inner {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-ing {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.footer-subing {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 28px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-input {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  transition: border 0.2s ease;
+}
+
+.footer-input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-input:focus {
+  border-color: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.15);
+}
+
+.footer-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.footer-input-error {
+  border-color: #ff6b6b !important;
+}
+
+.footer-error-msg {
+  font-size: 0.75rem;
+  color: #ff9f9f;
+  text-align: left;
+}
+
+.footer-send-btn {
+  background: #fff;
+  color: #0b0568;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-send-btn:hover:not(:disabled) {
+  background: #5c61c9;
+  color: #fff;
+}
+
+.footer-send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footer-success {
+  color: #a8f0c8;
+  font-size: 1rem;
+  padding: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: rgba(255,255,255,0.45);
+  font-size: 0.78rem;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
 /************ Navbar Css ************/
 .logoName{
   color: #ffffff;
@@ -242,15 +785,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-<<<<<<< HEAD
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 90px 0 60px;
-=======
   padding: 200px 0 100px 0;
->>>>>>> 42d1e49c3e13a41f0cf35d57ac9da70284af6b48
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,11 +813,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .wrap{
   color:#5c61c9 ;
 }
-<<<<<<< HEAD
-.banner p, .banner-desc {
-=======
 .banner p {
->>>>>>> 42d1e49c3e13a41f0cf35d57ac9da70284af6b48
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -922,497 +1453,6 @@ h2 {
 }
 
 /************ Footer Css ************/
-<<<<<<< HEAD
-.footer-new {
-  background-color: #0b0568;
-  padding: 70px 0 0 0;
-  scroll-margin-top: 75px;
-}
-.footer-inner {
-  max-width: 520px;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.footer-heading {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-.footer-subheading {
-  color: rgba(255,255,255,0.65);
-  font-size: 14px;
-  margin-bottom: 28px;
-}
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.footer-input {
-  width: 100%;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 8px;
-  color: #fff;
-  padding: 12px 16px;
-  font-size: 14px;
-  transition: border 0.2s, background 0.2s;
-  resize: none;
-}
-.footer-input::placeholder {
-  color: rgba(255,255,255,0.5);
-}
-.footer-input:focus {
-  outline: none;
-  background: rgba(255,255,255,0.15);
-  border-color: rgba(255,255,255,0.5);
-}
-.footer-input-error {
-  border-color: #f48fb1 !important;
-}
-.footer-textarea {
-  min-height: 100px;
-}
-.footer-error-msg {
-  color: #f48fb1;
-  font-size: 12px;
-  text-align: left;
-  margin-top: -6px;
-}
-.footer-send-btn {
-  background: #fff;
-  color: #0b0568;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 40px;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  align-self: center;
-  transition: background 0.2s, color 0.2s;
-}
-.footer-send-btn:hover {
-  background: #5c61c9;
-  color: #fff;
-}
-.footer-send-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-.footer-success {
-  color: #a5d6a7;
-  font-size: 15px;
-  margin-top: 10px;
-}
-.footer-bottom {
-  background-color: rgba(0,0,0,0.2);
-  color: rgba(255,255,255,0.45);
-  font-size: 12px;
-  font-style: italic;
-  text-align: center;
-  padding: 14px 0;
-}
-
-
-.top-gap { padding-top: 80px; }
-#skills, #certifications { scroll-margin-top: 90px; }
-
-/* Stats bar removed */
-
-/************ Experience Timeline ************/
-.experience-section {
-  background-color: #f5f6fa;
-  padding: 70px 0;
-  scroll-margin-top: 75px;
-}
-.section-heading {
-  text-align: center;
-  color: #0b0568;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-
-/* Grid-based alternating timeline */
-.tl-wrapper {
-  position: relative;
-  max-width: 980px;
-  margin: 0 auto;
-}
-/* Vertical center line */
-.tl-wrapper::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #d0d4e8;
-  transform: translateX(-50%);
-  z-index: 0;
-}
-.tl-row {
-  display: grid;
-  grid-template-columns: 1fr 44px 1fr;
-  align-items: start;
-  margin-bottom: 28px;
-}
-.tl-center {
-  display: flex;
-  justify-content: center;
-  padding-top: 18px;
-  z-index: 1;
-}
-.tl-dot {
-  width: 14px;
-  height: 14px;
-  background: #5c61c9;
-  border: 3px solid #f5f6fa;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #5c61c9;
-  flex-shrink: 0;
-}
-.tl-left {
-  padding-right: 16px;
-}
-.tl-right {
-  padding-left: 16px;
-}
-
-/* Card styles */
-.timeline-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 18px 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-  border: 1px solid #ebebf5;
-}
-.timeline-card-accent {
-  background: #fafafe;
-  border-color: #d8d8f0;
-}
-.timeline-card-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-.timeline-logo {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 1px solid #e0e0e0;
-  flex-shrink: 0;
-}
-.timeline-logo-text {
-  width: 42px;
-  height: 42px;
-  background: #0b0568;
-  color: #fff;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: 700;
-  flex-shrink: 0;
-  letter-spacing: 1px;
-}
-.timeline-title {
-  color: #0b0568;
-  font-weight: 600;
-  margin: 0 0 2px 0;
-  font-size: 15px;
-}
-.timeline-company {
-  font-size: 12px;
-  color: #5c61c9;
-  font-weight: 500;
-}
-.timeline-date {
-  font-size: 12px;
-  color: #999;
-}
-.timeline-list {
-  margin: 0;
-  padding-left: 16px;
-}
-.timeline-list li {
-  color: #555;
-  font-size: 13px;
-  margin-bottom: 5px;
-  line-height: 1.5;
-}
-.timeline-badge {
-  display: inline-block;
-  margin-top: 10px;
-  background: #e8eaf6;
-  color: #3f51b5;
-  border-radius: 20px;
-  padding: 2px 12px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-/* Mobile: collapse to single column */
-@media (max-width: 768px) {
-  .tl-wrapper::before { left: 12px; transform: none; }
-  .tl-row { grid-template-columns: 28px 1fr; grid-template-areas: "dot card"; }
-  .tl-center { grid-area: dot; padding-left: 0; }
-  .tl-left, .tl-right { grid-area: card; padding: 0; }
-  .tl-right:empty, .tl-left:empty { display: none; }
-}
-
-/************ Skills Section (new) ************/
-.skills-section {
-  background-color: #fff;
-  padding: 70px 0;
-  scroll-margin-top: 75px;
-}
-.skills-grid-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-.skill-column-heading {
-  font-size: 15px;
-  font-weight: 700;
-  color: #0b0568;
-  margin-bottom: 14px;
-}
-.skill-chip-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.skill-chip {
-  background: #f0f1f9;
-  color: #3a3d6b;
-  border-radius: 20px;
-  padding: 4px 12px;
-  font-size: 13px;
-  font-weight: 500;
-}
-@media (max-width: 992px) {
-  .skills-grid-card { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 576px) {
-  .skills-grid-card { grid-template-columns: 1fr; }
-}
-
-/************ Projects Section (new) ************/
-.projects-section {
-  background-color: #f5f6fa;
-  padding: 70px 0;
-  scroll-margin-top: 75px;
-}
-.project-card-new {
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.project-image-area {
-  width: 100%;
-  height: 140px;
-  background: #f5f5f5;
-  border: 2px dashed #d0d0e0;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 12px;
-  width: calc(100% - 24px);
-}
-.project-image-label {
-  color: #aaa;
-  font-size: 12px;
-}
-.project-card-body {
-  padding: 20px 16px 18px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.project-title {
-  color: #0b0568;
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-.project-desc {
-  color: #777;
-  font-size: 13px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  flex: 1;
-}
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 14px;
-}
-.project-tag {
-  background: #f0f1f9;
-  color: #3a3d6b;
-  border-radius: 20px;
-  padding: 3px 10px;
-  font-size: 12px;
-}
-.view-project-btn {
-  display: inline-block;
-  background: #0b0568;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 18px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  transition: background 0.2s;
-}
-.view-project-btn:hover {
-  background: #5c61c9;
-  color: #fff;
-}
-
-/************ Education Section (new) ************/
-.education-section {
-  background-color: #fff;
-  padding: 70px 0;
-  scroll-margin-top: 75px;
-}
-.edu-card-new {
-  background: #fff;
-  border-radius: 14px;
-  padding: 24px;
-  box-shadow: 0 2px 14px rgba(0,0,0,0.08);
-  height: 100%;
-}
-.edu-card-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 12px;
-}
-.edu-logo {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  flex-shrink: 0;
-}
-.edu-degree {
-  color: #0b0568;
-  font-weight: 700;
-  margin: 0 0 3px;
-  font-size: 16px;
-}
-.edu-meta {
-  color: #888;
-  font-size: 12px;
-}
-.edu-field {
-  color: #5c61c9;
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.edu-list {
-  padding-left: 18px;
-  margin: 0;
-}
-.edu-list li {
-  color: #666;
-  font-size: 13px;
-  margin-bottom: 4px;
-}
-
-/************ Certifications Section (new) ************/
-.certs-section {
-  background-color: #f5f6fa;
-  padding: 60px 0;
-  scroll-margin-top: 75px;
-}
-.cert-card {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  background: #fff;
-  border: 1px solid #e8eaf6;
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.cert-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(11,5,104,0.12);
-}
-.cert-image-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  min-height: 100px;
-  background-color: #f0f0ff;
-}
-.cert-img {
-  width: 100%;
-  max-width: 90px;
-  height: 72px;
-  object-fit: contain;
-  border-radius: 6px;
-}
-.cert-body {
-  padding: 10px 10px 12px;
-  text-align: center;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-.cert-title {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.35;
-  margin: 0;
-  color: #0b0568;
-}
-.cert-year {
-  font-size: 11px;
-  color: #999;
-}
-
-/************ Footer (new) ************/
-.footer-heading {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-.footer-subheading {
-  color: rgba(255,255,255,0.7);
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-
-=======
 .submit-button {
   background-color: #FFFFFF;
   color: #000;
@@ -1523,8 +1563,4 @@ h2 {
 }
 
 
-.top-gap { padding-top: 80px; }        /* change 80px to taste */
-#skills, #certifications { scroll-margin-top: 90px; } /* if you have a fixed navbar */
 
-
->>>>>>> 42d1e49c3e13a41f0cf35d57ac9da70284af6b48
