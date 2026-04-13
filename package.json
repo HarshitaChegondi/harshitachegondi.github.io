@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+<<<<<<< HEAD
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
@@ -31,5 +32,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+>>>>>>> 42d1e49c3e13a41f0cf35d57ac9da70284af6b48
   }
 }
