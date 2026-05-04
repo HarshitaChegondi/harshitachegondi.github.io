@@ -43,10 +43,14 @@ export const Banner = () => {
                         <h1 className="bannerH1">Hi! I am Harshita</h1>
                         <h3><span className="wrap">{text}</span></h3>
                         <p className="banner-desc">
-                            Full Stack Software Engineer with 4 years of experience owning the complete
-                            request lifecycle from React UI through Node.js REST APIs to PostgreSQL,
-                            across enterprise SaaS, AI platforms, and healthcare data systems. Skilled in
-                            microservices architecture, OAuth security, CI/CD, and cloud infrastructure on AWS.
+                            Full-stack Software Engineer with 4+ years of experience owning features 
+                            end-to-end across React frontends, Node.js and Java backends, REST APIs, 
+                            Salesforce platform development, and cloud infrastructure on AWS and 
+                            Google Cloud, across EdTech, enterprise, and healthcare data systems. 
+                            Skilled in microservices architecture, OAuth 2.0 integrations, LLM API 
+                            integration, Salesforce Apex and LWC, CI/CD pipelines, and delivering 
+                            production-grade software directly with product managers, designers, and 
+                            QA in Agile teams.
                         </p>
                         <button className="tagline" onClick={handleDownload}>
                             Download Resume <ArrowRightCircle size={25} />
