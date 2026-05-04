@@ -75,7 +75,6 @@ export const Experience = () => {
                   <li>Configured AWS Lambda to trigger pipeline execution on S3 file arrival, implementing event-driven processing that eliminated manual intervention and ensured continuous data ingestion.</li>
                   <li>Loaded cleaned datasets from S3 into Snowflake using Snowpipe for continuous ingestion, enforcing schema standards and data quality checks across 10 hospitals and 4 departments.</li>
                   <li>Built Tableau dashboards surfacing billing KPIs, procedure charge comparisons, and denial trends, giving managers real-time visibility into billing performance and improving data accuracy by 30% across the hospital network.</li>
-                
                 </ul>
               </div>
             </div>
