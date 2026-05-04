@@ -23,10 +23,10 @@ export const Experience = () => {
                   </div>
                 </div>
                 <ul className="timeline-list">
-                  <li>Built AI workflow features in React and Node.js with server-side validation and GCS progress tracking; improved task completion by 38% and cut API error rates by 27%.</li>
-                  <li>Optimized REST API via request batching and server-side caching, reducing call volume by 27% and latency by 40ms per interaction.</li>
-                  <li>Architected Docker-containerized Node.js microservices for auth and session management with Jest test suites; improved reliability by 31% and eliminated regression defects by 26%.</li>
-                  <li>Implemented CI/CD pipelines using GitHub Actions with branch-based release strategies, enabling zero-downtime deployments and cutting release cycles by 40%.</li>
+                  <li>Built a locked progression system in React and Node.js where each module unlocks only after the prior assessment is passed, increasing course completion rates across the platform.</li>
+                  <li>Integrated the Claude API into the Node.js backend to auto-generate study material summaries from uploaded transcripts, stored in Cloud Firestore so learners receive pre-generated content on every page load without redundant API calls.</li>
+                  <li>Designed RESTful APIs in Node.js and Express.js covering module content delivery, progress tracking, and assessment submission with all business logic enforced server-side.</li>
+                  <li>Built and maintained CI/CD pipelines using GitHub Actions across QA and Production environments, managed environment variables using GitHub Secrets, and served module videos via signed URLs expiring after one hour as a security best practice.</li>
                 </ul>
               </div>
             </div>
@@ -49,10 +49,10 @@ export const Experience = () => {
                   </div>
                 </div>
                 <ul className="timeline-list">
-                  <li>Led full-stack development for enterprise SaaS serving 10,000+ users across React, TypeScript, and Node.js with Salesforce integration; raised form completion by 30% and cut UI defects by 25%.</li>
-                  <li>Built end-to-end OAuth 2.0 system — React login flows, Node.js token middleware, JWT REST endpoints — reducing partner onboarding time by 40% and improving data accuracy by 28%.</li>
-                  <li>Migrated React class components to hooks, co-optimized API payloads and PostgreSQL query plans; achieved 25% faster load times on 50,000+ record datasets.</li>
-                  <li>Shipped Java and TypeScript microservices with 90%+ test coverage; CI/CD gates reduced production incidents by 30% across all endpoints.</li>
+                  <li>Delivered client projects end-to-end across React, TypeScript, Angular, and Salesforce, including a J-1 visa sponsorship modernization, an annual audit automation, a legacy website migration from React 16 to React 17, and a student admission portal — owning each from requirements through production deployment with client sign-off at every stage.</li>
+                  <li>Built and shipped production-grade features across the full stack including multi-stage React forms with OAuth 2.0 authentication, Angular six-stage audit forms with DocuSign e-signature routing, Apex batch jobs processing large student data volumes, shared React component libraries used across all projects, and CI/CD pipelines using GitHub Actions across QA and Production environments.</li>
+                  <li>Diagnosed and resolved performance bottlenecks using Chrome DevTools across both Angular and React codebases, identified unnecessary re-renders as the root cause in both cases, and refactored affected components delivering 25% faster load times on two separate client projects.</li>
+                  <li>Maintained 90-95% test coverage across all projects by writing Apex test classes, unit tests using Jest, Jasmine, and Karma, and coordinating regression and cross-browser testing with QA before every release, while conducting code reviews, mentoring junior engineers, and presenting at bi-weekly client demos throughout delivery.</li>
                 </ul>
               </div>
             </div>
@@ -71,9 +71,11 @@ export const Experience = () => {
                   </div>
                 </div>
                 <ul className="timeline-list">
-                  <li>Deployed cloud-native AWS pipelines (S3, Lambda, Glue) for large-scale healthcare data ingestion; reduced data prep effort by 35% and improved pipeline reliability by 30%.</li>
-                  <li>Automated Snowflake and DynamoDB pipeline schema validation and integrity checks, cutting 25% of manual audit over and reducing reporting defects by 25%.</li>
-                  <li>Optimized PostgreSQL query plans and indexes for high-throughput dashboards; reduced median response time by 35% and improved aggregation performance by 40%.</li>
+                  <li>Built ETL pipelines using AWS Glue and Python to ingest CSV billing data from on-prem systems into S3, applying data quality transformations including null handling, type correction, and deduplication across 50,000+ monthly records.</li>
+                  <li>Configured AWS Lambda to trigger pipeline execution on S3 file arrival, implementing event-driven processing that eliminated manual intervention and ensured continuous data ingestion.</li>
+                  <li>Loaded cleaned datasets from S3 into Snowflake using Snowpipe for continuous ingestion, enforcing schema standards and data quality checks across 10 hospitals and 4 departments.</li>
+                  <li>Built Tableau dashboards surfacing billing KPIs, procedure charge comparisons, and denial trends, giving managers real-time visibility into billing performance and improving data accuracy by 30% across the hospital network.</li>
+                
                 </ul>
               </div>
             </div>
