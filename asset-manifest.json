@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.66134bbd.css",
-    "main.js": "/static/js/main.a37ee0fa.js",
-    "static/js/358.aa22da38.chunk.js": "/static/js/358.aa22da38.chunk.js",
+    "main.js": "/static/js/main.29a16bae.js",
+    "static/js/563.d33abc64.chunk.js": "/static/js/563.d33abc64.chunk.js",
     "static/media/applause.jpg": "/static/media/applause.fcea3bf7230b92cd7eef.jpg",
     "static/media/aiassiociate.jpg": "/static/media/aiassiociate.f758605d8a8d76f6f229.jpg",
     "static/media/coursera.jpg": "/static/media/coursera.5a1c6655684b0f9a7a83.jpg",
+    "static/media/Harshita_Chegondi_Resume.pdf": "/static/media/Harshita_Chegondi_Resume.cf2b707816bee7a57c41.pdf",
     "static/media/salesforceJS1.jpg": "/static/media/salesforceJS1.30fbc3560c0d413cba79.jpg",
     "static/media/HarshitaPic.png": "/static/media/HarshitaPic.c7a9da9d9f6e9fbf1801.png",
-    "static/media/Harshita_Chegondi_Resume.pdf": "/static/media/Harshita_Chegondi_Resume.f9b453585d8987f1e35f.pdf",
     "static/media/DatabricksCertificate.jpg": "/static/media/DatabricksCertificate.f27c26b4024286ddf333.jpg",
     "static/media/absyz.jpg": "/static/media/absyz.3dba602c40469ccee5ae.jpg",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -16,14 +16,14 @@
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/gitam.jpg": "/static/media/gitam.d0283d348e4c56ec50dc.jpg",
     "static/media/github.png": "/static/media/github.bb1bcb4c34e56ddbc178.png",
-    "static/media/nav-icon1.svg": "/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
+    "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/index.html",
     "main.66134bbd.css.map": "/static/css/main.66134bbd.css.map",
-    "main.a37ee0fa.js.map": "/static/js/main.a37ee0fa.js.map",
-    "358.aa22da38.chunk.js.map": "/static/js/358.aa22da38.chunk.js.map"
+    "main.29a16bae.js.map": "/static/js/main.29a16bae.js.map",
+    "563.d33abc64.chunk.js.map": "/static/js/563.d33abc64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66134bbd.css",
-    "static/js/main.a37ee0fa.js"
+    "static/js/main.29a16bae.js"
   ]
 }
